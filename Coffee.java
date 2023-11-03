@@ -22,8 +22,9 @@ public abstract class Coffee { //abstraction
     public double getPrice() {
         return cost;
     }
+}
 
-    public class Latte extends Coffee { //inheritence
+    class Latte extends Coffee { //inheritence
         public Latte() {
             name = "latte";
             water = 200;
@@ -33,7 +34,7 @@ public abstract class Coffee { //abstraction
         }
     }
     
-    public class Espresso extends Coffee {
+    class Espresso extends Coffee {
         public Espresso() {
             name = "espresso";
             water = 150;
@@ -43,7 +44,7 @@ public abstract class Coffee { //abstraction
         }
     }
 
-    public class Cappuccino extends Coffee {
+    class Cappuccino extends Coffee {
         public Cappuccino() {
             name = "cappuccino";
             water = 250;
@@ -51,6 +52,4 @@ public abstract class Coffee { //abstraction
             coffee = 18;
             cost = 3.5;
         }
-}
-
 }
